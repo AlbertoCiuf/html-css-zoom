@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+header {
+  height: 60px;
+  background-color: #000;
+}
+
+main {
+  height: calc(100vh - 160px);
+}
+
+footer {
+  height: 100px;
+  background-color: #000;
+}
