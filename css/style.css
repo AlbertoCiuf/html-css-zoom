@@ -10,6 +10,8 @@ body {
   color: white;
 }
 
+
+/*HEADER*/
 header {
   height: 60px;
   background-color: #000;
@@ -32,10 +34,39 @@ header .container .view-selection, header .container .fa-expand-arrows-alt {
   cursor: pointer;
 }
 
+
+/*MAIN*/
 main {
   height: calc(100vh - 140px);
+  overflow: auto;
+  background-color: #000;
 }
 
+main .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+main .container .user-cam {
+  position: relative;
+}
+
+main .container .user-cam img {
+  padding: 3px;
+}
+
+main .container .user-cam .user-name {
+  position: absolute;
+  left: 0px;
+  bottom: 3px;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 5px;
+}
+
+/*FOOTER*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -45,8 +76,6 @@ footer {
 
 footer .footer-left, footer .footer-mid, footer .footer-right {
   display: flex;
-  /* flex-shrink: 0; */
-  
 }
 
 footer .footer-left ul, footer .footer-mid ul {
@@ -103,5 +132,6 @@ footer .footer-right {
 footer .footer-right .end {
   color: #D61413;
   padding: 20px;
-  font-size: 12px;
+  font-size: 14px;
+  cursor: pointer;
 }
