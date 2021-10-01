@@ -44,16 +44,20 @@ main {
 
 main .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 main .container .user-cam {
   position: relative;
+  width: 250px;
+  height: 150px;
 }
 
 main .container .user-cam img {
   padding: 3px;
+  height: 100%;
+  width: 100%;
 }
 
 main .container .user-cam .user-name {
